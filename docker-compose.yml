@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  trello-backup:
+    build:
+      context: .
+    volumes:
+      - ./resources/:/usr/src/output
+    env_file:
+      - trello-backup.env
